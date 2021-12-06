@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.p-4{
+    padding: 3px 7px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.container > .post-card{
+    width: 450px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.container > .post-card > .post-text{
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.profile-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-details > .profile-img{
+    height: 60px;
+    width: 60px;
+    background: white;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.profile-details > .profile-img > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.profile-details > .profile-name{
+    flex: 1;
+}
+
+.profile-details > .profile-name p{
+    margin-bottom: 2px;
+}
+
+.profile-details > .option{
+    padding: 0px 10px;
+    font-size: 1.2em;
+}
+
+.post-card > .post-img{
+    height: auto;
+    width: 100%;
+}
+
+.post-card > .post-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.post-card .footer{
+    padding: 0px 15px;
+    /* background: red; */
+}
+
+.reactions{
+    padding: 8px 0;
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.reactions .likes{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.reactions .likes .icon{
+    margin-right: 1px;
+}
+
+.reactions .likes .icon:nth-child(3){
+    margin-right: 5px;
+}
+
+.reactors{
+    display: flex;
+    padding: 5px 0;
+}
+
+.reactors .reactor{
+    flex: 1;
+    margin: 0 4px;
+    background: none;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.reactors .reactor:hover{
+    background: whitesmoke;
+    /* color: white; */
+}
+
+.reactors #main-like{
+    position: relative;
+}
+
+.reactors #main-like:hover .emojis-contain{
+    display: flex;
+}
+
+.emojis-contain{
+    position: absolute;
+    top: -110%;
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding: 7px;
+    border-radius: 22px;
+    display: none;
+    box-shadow: 0 0 2px #e0e0e0;
+}
+
+.emojis-contain .emoji{
+    font-size: 1.7em;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.emojis-contain .emoji:hover{
+    transform: scale(1.4);
+}
